@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-
 <head>
-	<title>Joaquim Monserrat freeCodeCamp Portfolio</title>
+	<title>Random Quote Machine</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="icon" href="img/letter-j.png">
+	<link rel="icon" href="img/quote.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -12,214 +11,29 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.0.11/css/fork-awesome.min.css" integrity="sha256-MGU/JUq/40CFrfxjXb5pZjpoZmxiP2KuICN5ElLFNd8=" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" href="style.css">
 	<script src="main.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="55">
+<body class="background">
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-	<!-- Navigation -->
-	<header>
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#portfolio-navbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand scrollable" href="#about">Joaquim Monserrat</a>
-				</div>
-				<div class="collapse navbar-collapse" id="portfolio-navbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#about" class="scrollable">About</a></li>
-						<li><a href="#portfolio" class="scrollable">FCC Portfolio</a></li>
-						<li><a href="#tools" class="scrollable">Tools used</a></li>
-						<!-- <li><a href="#contact" class="scrollable">Contact</a></li> -->
-					</ul>
+	<div class="box">
+		<div id="wrapper" class="wrapper hidden">
+			<div id="quote-box" class="quote-box">
+				<h2 id="text"></h2>
+				<h3 id="author" class="author"></h3>
+				<div class="buttons">
+					<a id="tweet-quote" target="_blank" class="button"><i class="fa fa-fw fa-twitter"></i></a>
+					<a id="toot-quote" target="_blank" class="button"><i class="fa fa-fw fa-mastodon"></i></a>
+					<button id="new-quote" class="button right">New quote</button>
 				</div>
 			</div>
-		</nav> 
-	</header>
-
-	<!-- About -->
-	<div id="about" class="container">
-		<h1 class="text-center">About</h1>
-		<div class="row">
-			<div class="col-md-3 text-center">
-				<img class="img-responsive" src="img/quim.png">
-			</div>
-			<div class="col-md-9">
-				<p> My name is Joaquim Monserrat and I'm a
-					mathematician and self-taught software
-					developer. I have the degree and master in
-					Mathematics by the Universitat Politècnica de
-					Catalunya (Spain). Currently I am working as a
-					developer at Alter Software (Lleida, Spain). I
-					enjoy developing webs and apps in my spare time.</p>
-				<h2>Aspiring Full Stack Developer</h2>
+			<div class="footer">
+				<div>by <a href="https://github.com/jeremies" target="_blank">jeremies</a></div>
 			</div>
 		</div>
-	</div>
-
-	<!-- Portfolio -->
-	<div id="portfolio" class="container text-center">
-		<h1>freeCodeCamp Portfolio</h1>
-		<br>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<a href="https://jeremies.github.io/tribute-page/" target="_blank"><img class="img-responsive" src="img/gandhi.png"></a>
-					</div>
-					<div class="panel-body">
-						<a href="https://jeremies.github.io/tribute-page/" target="_blank">A Tribute to Mahatma Gandhi</a>
-						<p>A tribute page to Mahatma Gandhi. It
-						contains a timeline and some quotes of Gandhi.</p>
-						<div class="tags"><span class="label label-default">Bootstrap</span> <span class="label label-default">CSS</span> <span class="label label-default">html</span> <span class="label label-default">JQuery</span></div>
-					</div>
-					<div class="panel-footer">
-						<div class="row">
-							<div class="col-xs-6">
-								<a class="btn btn-success btn-block" href="https://jeremies.github.io/tribute-page/" target="_blank">Page</a> 
-							</div>
-							<div class="col-xs-6">
-								<a class="btn btn-info btn-block" href="https://github.com/jeremies/tribute-page" target="_blank">Source</a> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<img class="img-responsive" src="img/placeholder.jpg">
-					</div>
-					<div class="panel-body">
-						<a>Placeholder</a>
-						<p>Lorem ipsum dolor sit amet, consectetur
-						adipisici elit, sed eiusmod tempor incidunt ut
-						labore et dolore magna aliqua.</p>
-						<div class="tags"><span class="label label-default">Bootstrap</span> <span class="label label-default">CSS</span> <span class="label label-default">html</span> <span class="label label-default">JQuery</span></div>
-					</div>
-					<div class="panel-footer">
-						<div class="row">
-							<div class="col-xs-6">
-								<a class="btn btn-success btn-block">Page</a> 
-							</div>
-							<div class="col-xs-6">
-								<a class="btn btn-info btn-block">Source</a> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<img class="img-responsive" src="img/placeholder.jpg">
-					</div>
-					<div class="panel-body">
-						<a>Placeholder</a>
-						<p>Lorem ipsum dolor sit amet, consectetur
-						adipisici elit, sed eiusmod tempor incidunt ut
-						labore et dolore magna aliqua.</p>
-						<div class="tags"><span class="label label-default">Bootstrap</span> <span class="label label-default">CSS</span> <span class="label label-default">html</span> <span class="label label-default">JQuery</span></div>
-					</div>
-					<div class="panel-footer">
-						<div class="row">
-							<div class="col-xs-6">
-								<a class="btn btn-success btn-block">Page</a> 
-							</div>
-							<div class="col-xs-6">
-								<a class="btn btn-info btn-block">Source</a> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<img class="img-responsive" src="img/placeholder.jpg">
-					</div>
-					<div class="panel-body">
-						<a>Placeholder</a>
-						<p>Lorem ipsum dolor sit amet, consectetur
-						adipisici elit, sed eiusmod tempor incidunt ut
-						labore et dolore magna aliqua.</p>
-						<div class="tags"><span class="label label-default">Bootstrap</span> <span class="label label-default">CSS</span> <span class="label label-default">html</span> <span class="label label-default">JQuery</span></div>
-					</div>
-					<div class="panel-footer">
-						<div class="row">
-							<div class="col-xs-6">
-								<a class="btn btn-success btn-block">Page</a> 
-							</div>
-							<div class="col-xs-6">
-								<a class="btn btn-info btn-block">Source</a> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> 
-
-	<!-- Tools used -->
-	<div id="tools" class="container text-center">
-		<h1>Tools used</h1>
-
-		<div class="row">
-			<div class="col-sm-2 col-sm-offset-1">
-				<i title="HTML5" class="devicon-html5-plain-wordmark"></i>
-			</div>
-			<div class="col-sm-2">
-				<i title="CSS3" class="devicon-css3-plain-wordmark"></i>
-			</div>
-			<div class="col-sm-2">
-				<i title="Bootstrap" class="devicon-bootstrap-plain-wordmark"></i>
-			</div>
-			<div class="col-sm-2">
-				<i title="JQuery" class="devicon-jquery-plain-wordmark"></i>
-			</div>
-			<div class="col-sm-2">
-				<i title="Git" class="devicon-git-plain-wordmark"></i>
-			</div>
-		</div>
-	</div>
-
-	<!-- Contact me -->
-	<!-- 
-	<div id="contact" class="container">
-		<h1 class="text-center">Contact me</h1>
-
-		<div class="row">
-			<div class="col-md-6">
-				<input id="name" name="name" placeholder="Name" type="text" required>
-				<input id="email" name="email" placeholder="Email" type="text" required>
-				<textarea id="message" name="message" placeholder="Message" type="text" required></textarea>
-			</div>
-			<div class="col-md-6">
-			</div>
-		</div>
-	</div>
-	-->
-
-	<!-- Footer -->
-	<div id="footer" class="container-fluid text-center">
-			<h1><strong>Follow me</strong></h1>
-			<ul class="list-inline">
-				<li><a href="https://github.com/jeremies" target="_blank"><i class="fa fa-fw fa-github fa-2x"></i></a></li>
-				<li><a href="https://www.freecodecamp.org/jeremies" target="_blank"><i class="fa fa-fw fa-free-code-camp fa-2x"></i></a></li>
-				<li><a href="https://framasphere.org/u/jeremies" target="_blank"><i class="fa fa-fw fa-diaspora fa-2x"></i></a></li>
-			</ul>
-			<hr class="small">
-			<p>Copyright &copy; 2018 Joaquim Monserrat. (<a href="https://github.com/jeremies/personal-portfolio" target="_blank">Page source code</a>)</p>
 	</div>
 </body>
